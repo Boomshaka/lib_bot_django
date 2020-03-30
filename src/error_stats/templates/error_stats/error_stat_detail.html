@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Student - {{object.student_id}}</h1>
+<p>number of attempts - {{object.num_tried}}</p>
+<p>number of success - {{object.num_success}}</p>
+<p>last ran - {{object.last_ran}}</p>
+<p>last failed - {{object.last_failed}}</p>
+<p>reliability (exponential moving average, alpha=1/6) = {{object.reliability}}</p>
+{% endblock %}

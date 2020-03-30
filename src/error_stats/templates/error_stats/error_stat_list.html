@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% for instance in object_list %}
+    <p>{{instance.id}} - <a href='{{ instance.get_absolute_url }}'>Get Stats</a> ({{instance.student_id.firstname}} {{instance.student_id.lastname}})</p>
+{% endfor %}
+
+{% endblock %}
